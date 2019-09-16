@@ -1,0 +1,19 @@
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    jmx:
+      exposure:
+        exclude: "*"
+  health:
+  endpoint:
+    health:
+      show-details: always
+
+  main:
+    allow-bean-definition-overriding: true

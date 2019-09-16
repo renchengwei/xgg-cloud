@@ -1,0 +1,10 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: xgg-cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 668382ab-4df6-49df-aeda-ced205e22c27

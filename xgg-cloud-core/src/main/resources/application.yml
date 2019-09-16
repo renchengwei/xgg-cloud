@@ -1,0 +1,30 @@
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    jmx:
+      exposure:
+        exclude: "*"
+  health:
+  endpoint:
+    health:
+      show-details: always
+
+  main:
+    allow-bean-definition-overriding: true
+
+dubbo:
+  scan:
+    base-packages: com.xgg.cloud.core.service
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registries:
+    new:
+      address: spring-cloud://localhost
